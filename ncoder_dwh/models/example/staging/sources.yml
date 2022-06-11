@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: dwh_stg
+    tables:
+      - name: stg.hubspot_companies_all
+      - name: stg.hubspot_companies_countries
+      - name: stg.hubspot_companies_industries
+      - name: stg.hubspot_contacts_list_members_all
+      - name: stg.hubspot_lists_all
+      - name: stg.mailchimp_contacts_processed
+      - name: stg.mailchimp_lists
+      - name: stg.mailjet_contact_lists_all
+      - name: stg.mailjet_list_recipients_all
+      - name: stg.processed_hubspot_contacts_all
+      - name: stg.processed_mailjet_contacts_all

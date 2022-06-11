@@ -1,3 +1,5 @@
+{{ config(materialized='table', sort='timestamp', dist='user_id') }}
+
 with hubspot_contacts as (
     select * 
     from {{ sources('contacts', 'processed_hubspot_contacts_all')}}
